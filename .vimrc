@@ -39,7 +39,6 @@ map <leader>sa zg
 "find spelling suggestion for word under cursor
 map <leader>s? z=
 
-
 "Files and backup
 "-------------------------------------------------
 
