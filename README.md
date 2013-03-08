@@ -12,4 +12,5 @@ By default, vim will look for the .vimrc configuration file in your root directo
 
     ln -s ~/.vim/.vimrc ~/.vimrc
 
-
+I use the font Anonymous Pro, which you may also need to download. You can find it here: 
+http://www.marksimonson.com/fonts/view/anonymous-pro
