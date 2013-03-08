@@ -27,7 +27,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 "Spell checking - ,ss will toggle
-map <leader>ss :setlocal spell spellland=en_us<cr>
+map <leader>ss :setlocal spell! spelllang=en_us<cr>
 
 "Shortcuts using <leader>
 "next incorrectly spelled word
