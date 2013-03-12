@@ -2,7 +2,7 @@
 " 
 " By Elliot Penson
 "
-" To load vim without using this .vimrc file, use:
+" To load Vim without using this .vimrc file, use:
 "   vim -u NORC
 
 
@@ -81,10 +81,10 @@ set formatoptions+=r
 "javadoc block comment
 abbr com /**<CR><CR>/<esc>kA
 
-"Java appreviations (taken from the vim wikia)
+"Java abbreviations (taken from the vim wikia)
 abbr psvm public static void main(String[] args) {<CR>}<esc>O
 abbr sysout System.out.println("");<esc>2hi
-abbr sop System.out.println("");<esc>2hi
+abbr sop System.out.println("");<esc>3h
 abbr syserr System.err.println("");<esc>2hi
 abbr sep System.err.println("");<esc>2hi
 
