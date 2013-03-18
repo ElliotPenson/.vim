@@ -1,5 +1,6 @@
 My Vim Settings
 ====
+...and lots of colorschemes!
 
 Installing:
 ----------------------
