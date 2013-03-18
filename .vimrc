@@ -83,13 +83,13 @@ abbr com /**<CR><CR>/<esc>kA
 
 "Java abbreviations (taken from the vim wikia)
 abbr psvm public static void main(String[] args) {<CR>}<esc>O
-abbr sysout System.out.println("");<esc>2hi
+abbr sysout System.out.println("");<esc>3h
 abbr sop System.out.println("");<esc>3h
-abbr syserr System.err.println("");<esc>2hi
-abbr sep System.err.println("");<esc>2hi
+abbr syserr System.err.println("");<esc>3h
+abbr sep System.err.println("");<esc>3h
 
-abbr forl for (int i = 0; i < ; i++) {<esc>7hi
-abbr tryb try {<CR>} catch (Exception ex) {<CR> ex.printStackTrace();<CR>}<esc>hx3ko
+abbr forl for(int i = 0; i < ; i++) {<esc>7hi
+abbr tryb try {<CR>} catch(Exception ex) {<CR> ex.printStackTrace();<CR>}<esc>hx3ko
 abbr const public static final int
 
 abbr ctm System.currentTimeMillis()
@@ -110,7 +110,7 @@ else
 endif
 
 "Set the colorscheme
-set background=dark 
+set background=dark
 colorscheme Slate
 
 "Movement
