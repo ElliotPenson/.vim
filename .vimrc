@@ -101,17 +101,15 @@ abbr slept try {<CR> Thread.sleep();<CR>}<esc>hxA catch(Exception ex) {<CR> ex.p
 "Turn on syntax highlighting
 :syntax on
 
-"If gui vim then set a font, otherwise attempt to make termal have 256 colors
+"If gui vim then set a font and colorscheme, otherwise attempt to make termal have 256 colors
 if has ("gui_running")
     set guifont=Anonymous\ Pro:h12
+    set background=dark
+    colorscheme Slate
     "set guifont=Menlo:h11
 else
     set t_Co=256
 endif
-
-"Set the colorscheme
-set background=dark
-colorscheme Slate
 
 "Movement
 "-------------------------------------------------
