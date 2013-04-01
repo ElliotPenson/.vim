@@ -15,3 +15,7 @@ By default, vim will look for the .vimrc configuration file in your root directo
 
 I use the font Anonymous Pro, which you may also need to download. You can find it here: 
 http://www.marksimonson.com/fonts/view/anonymous-pro
+
+Disclaimer:
+----------------------
+Note that I did not create and do not own any of the colorschemes. I also found the indentation fix [here](http://stackoverflow.com/questions/200932/how-do-i-make-vim-indent-java-annotations-correctly). Therefore, these files belong to their respective owners.
