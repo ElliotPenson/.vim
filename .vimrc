@@ -105,8 +105,6 @@ abbr slept try {<CR> Thread.sleep();<CR>}<esc>hxA catch(Exception ex) {<CR> ex.p
 set background=dark
 if has ("gui_running")
     color base16-default
-    set guifont=Menlo:h11
-    "set guifont=Anonymous\ Pro:h12
 else
     set t_Co=256
     colorscheme hemisu
