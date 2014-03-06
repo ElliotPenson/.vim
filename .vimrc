@@ -1,12 +1,12 @@
 " Configuration file for Vim
-" 
-" By Elliot Penson
+" by Elliot Penson
 "
 " To load Vim without using this .vimrc file, use:
 "   vim -u NORC
 
-"Vundle
-"-------------------------------------------------
+
+" Vundle
+" -------------------------------------------------
 
 set rtp+=~/.vim/bu
 
@@ -28,6 +28,13 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/wombat256.vim'
 Bundle 'zaki/zazen'
 
+" indentation
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-markdown'
+
+" plugins
+" @todo
+
 filetype plugin indent on     " required
 
 " Brief help
@@ -36,94 +43,93 @@ filetype plugin indent on     " required
 " :BundleSearch(!) foo - search (or refresh cache first) for foo
 " :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
 
-"Interface
-"-------------------------------------------------
+" Interface
+" -------------------------------------------------
 
-set laststatus=2 "Always show status line
+set laststatus=2 " show status line
 
-set ruler        "Always show the cursor position
-set number       "Show line numbers
+set ruler        " show the cursor position
+set number       " show line numbers
 
-set title        "Show info in the window title
-set titlestring=EJNP:\ %F "Automatically set screen title
+set title        " show info in the window title
+set titlestring=EJNP:\ %F " set screen title
 
-set confirm      "Start a dialog when a command fails (here when quit command fails)
+set confirm      " start a dialog when a command fails (here when quit command fails)
 
-set ignorecase   "Ignore case when searching
-"set incsearch    "Do incremental searching
+" searching
+set hlsearch     " highlight matches
+set incsearch    " incremental searching
+set ignorecase   " ignore case when searching
+set smartcase    " ...unless they contain at least one capital letter
 
-"Set up map leader for extra key combinations
+" map leader to a comma
 let mapleader = ","
 let g:mapleader = ","
 
-"Spell checking - ,ss will toggle
+" spell checking - <leader>ss will toggle
 map <leader>ss :setlocal spell! spelllang=en_us<cr>
-
-"Shortcuts using <leader>
-"next incorrectly spelled word
+" next incorrectly spelled word
 map <leader>sn ]s
-"previous incorrectly spelled word
+" previous incorrectly spelled word
 map <leader>sp [s
-"add word under cursor as a good word
+" add word under cursor as a good word
 map <leader>sa zg
-"find spelling suggestion for word under cursor
+" find spelling suggestion for word under cursor
 map <leader>s? z=
 
-"Files and backup
-"-------------------------------------------------
+" tab window switch
+map <Tab> <C-W>w
 
-"Automatically write a file when leaving a modified buffer
-set autowrite
+" Files and backup
+" -------------------------------------------------
 
-"Turn backup off (I use git/mercurial instead)
+" turn backup off
 set nobackup
 set nowb
 set noswapfile
 
-"Formatting/Indentation
-"-------------------------------------------------
+" Formatting/Indentation
+" -------------------------------------------------
 
-"Convert tabs to spaces
-set expandtab
+" whitespace
+set expandtab             " convert tabs to spaces
+set tabstop=4             " 1 tab == 4 spaces
+set shiftwidth=4          " autoindent with 4 spaces
+set list                  " Show invisible characters
+set listchars=""          " reset listchars
+set listchars=tab:\ \     " display tab as two spaces,
+set listchars+=trail:.    " trailing whitespace as dots
+set listchars+=extends:>  " wrap character
+set listchars+=precedes:<
 
-"1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4 
- 
-"Indent only if the file is of type cpp,c,java,sh,pl,php,asp
-set noautoindent
-set nosmartindent
-set nocindent
+" don't wrap lines
+set nowrap
 
-au FileType cpp,c,java,sh,pl,php,asp  set autoindent
-au FileType cpp,c,java,sh,pl,php,asp  set smartindent
-au FileType cpp,c,java,sh,pl,php,asp  set cindent
-
-"Wrap lines
-set wrap 
-
-"Automatically type newlines/endmarkers
+" automatically type newlines/endmarkers
 set formatoptions+=r
 
-"Colors and Fonts
-"-------------------------------------------------
+" set default encoding to UTF-8
+set encoding=utf-8
 
-"Turn on syntax highlighting
-:syntax on
+" Colors and Fonts
+" -------------------------------------------------
 
-"If gui vim then set a font and colorscheme, otherwise attempt to make termal have 256 colors
-set background=dark
-if has ("gui_running")
-    color base16-default
-else
+" turn on syntax highlighting allowing local overrides
+syntax enable
+
+" attempt to make termal have 256 colors
+if !has ("gui_running")
     set t_Co=256
-    color slate
 endif
 
-"Movement
-"-------------------------------------------------
+" set color scheme
+set background=dark
+color base16-default
 
-"Disable arrow keys in insert mode (habit breaking)
+" Movement
+" -------------------------------------------------
+
+" disable arrow keys in insert mode (habit breaking)
 inoremap <up> <nop>
 vnoremap <up> <nop>
 inoremap <down> <nop>
@@ -133,11 +139,13 @@ vnoremap <left> <nop>
 inoremap <right> <nop>
 vnoremap <right> <nop>
 
-"Misc
-"-------------------------------------------------
+" Misc
+" -------------------------------------------------
 
-"Java specific settings
+" in Makefiles, use real tabs, not tabs expanded to spaces
+au FileType make setlocal noexpandtab
+
+" Java specific settings
 let java_ignore_javadoc=1 "stops special javadoc comment highlighting
 let java_comment_strings=1
 let java_highlight_java_lang_ids=1 "highlights java.lang.* identifiers
-
