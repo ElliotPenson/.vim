@@ -33,7 +33,18 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-markdown'
 
 " plugins
-" @todo
+Bundle 'kovisoft/slimv'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+" - following four Bundle calls constitute SnipMate
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required
 
