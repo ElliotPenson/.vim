@@ -1,6 +1,6 @@
 My Vim Settings
 ====
-...and lots of colorschemes!
+...and lots of color schemes!
 
 Installing:
 ----------------------
@@ -18,4 +18,4 @@ http://www.marksimonson.com/fonts/view/anonymous-pro
 
 Disclaimer:
 ----------------------
-Note that I did not create and do not own any of the colorschemes. I also found the indentation fix [here](http://stackoverflow.com/questions/200932/how-do-i-make-vim-indent-java-annotations-correctly). Therefore, these files belong to their respective owners.
+Note that I did not create and do not own any of the color schemes or plugins included. Therefore, these files belong to their respective owners.

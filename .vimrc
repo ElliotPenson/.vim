@@ -75,26 +75,6 @@ set wrap
 "Automatically type newlines/endmarkers
 set formatoptions+=r
 
-"Abbreviations
-"-------------------------------------------------
-
-"javadoc block comment
-abbr com /**<CR><CR>/<esc>kA
-
-"Java abbreviations (taken from the vim wikia)
-abbr psvm public static void main(String[] args) {<CR>}<esc>O
-abbr sysout System.out.println("");<esc>3h
-abbr sop System.out.println("");<esc>3h
-abbr syserr System.err.println("");<esc>3h
-abbr sep System.err.println("");<esc>3h
-
-abbr forl for(int i = 0; i < ; i++) {<esc>7hi
-abbr tryb try {<CR>} catch(Exception ex) {<CR> ex.printStackTrace();<CR>}<esc>hx3ko
-abbr const public static final int
-
-abbr ctm System.currentTimeMillis()
-abbr slept try {<CR> Thread.sleep();<CR>}<esc>hxA catch(Exception ex) {<CR> ex.printStackTrace();<CR>}<esc>hx3k$hi
-
 "Colors and Fonts
 "-------------------------------------------------
 
