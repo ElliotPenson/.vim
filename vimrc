@@ -149,14 +149,3 @@ inoremap <left> <nop>
 vnoremap <left> <nop>
 inoremap <right> <nop>
 vnoremap <right> <nop>
-
-" Misc
-" -------------------------------------------------
-
-" in Makefiles, use real tabs, not tabs expanded to spaces
-au FileType make setlocal noexpandtab
-
-" Java specific settings
-let java_ignore_javadoc=1 "stops special javadoc comment highlighting
-let java_comment_strings=1
-let java_highlight_java_lang_ids=1 "highlights java.lang.* identifiers
