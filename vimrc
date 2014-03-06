@@ -28,7 +28,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/wombat256.vim'
 Bundle 'zaki/zazen'
 
-" indentation
+" langs
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-markdown'
 
@@ -45,6 +45,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required
 
