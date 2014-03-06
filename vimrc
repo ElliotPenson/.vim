@@ -60,6 +60,7 @@ filetype plugin indent on     " required
 " -------------------------------------------------
 
 set laststatus=2 " show status line
+set noshowmode   " remove default mode indicator
 
 set ruler        " show the cursor position
 set number       " show line numbers
