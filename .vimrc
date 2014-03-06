@@ -20,7 +20,7 @@ set titlestring=EJNP:\ %F "Automatically set screen title
 set confirm      "Start a dialog when a command fails (here when quit command fails)
 
 set ignorecase   "Ignore case when searching
-set incsearch    "Do incremental searching
+"set incsearch    "Do incremental searching
 
 "Set up map leader for extra key combinations
 let mapleader = ","
