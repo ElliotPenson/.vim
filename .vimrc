@@ -5,6 +5,36 @@
 " To load Vim without using this .vimrc file, use:
 "   vim -u NORC
 
+"Vundle
+"-------------------------------------------------
+
+set rtp+=~/.vim/bu
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+
+" color schemes
+Bundle 'chriskempson/base16-vim'
+Bundle 'larssmit/vim-getafe'
+Bundle 'vim-scripts/molokai'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/wombat256.vim'
+Bundle 'zaki/zazen'
+
+filetype plugin indent on     " required
+
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install (update) bundles
+" :BundleSearch(!) foo - search (or refresh cache first) for foo
+" :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
 
 "Interface
 "-------------------------------------------------
@@ -87,7 +117,7 @@ if has ("gui_running")
     color base16-default
 else
     set t_Co=256
-    colorscheme hemisu
+    color slate
 endif
 
 "Movement
