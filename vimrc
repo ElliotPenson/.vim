@@ -27,6 +27,7 @@ Bundle 'vim-scripts/molokai'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/wombat256.vim'
 Bundle 'zaki/zazen'
+Bundle 'Pychimp/vim-luna'
 
 " langs
 Bundle 'pangloss/vim-javascript'

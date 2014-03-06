@@ -22,6 +22,9 @@
 [submodule "bundle/zazen"]
 	path = bundle/zazen
 	url = https://github.com/zaki/zazen
+[submodule "bundle/vim-luna"]
+	path = bundle/vim-luna
+	url = https://github.com/Pychimp/vim-luna.git
 
 # langs
 [submodule "bundle/vim-javascript"]
