@@ -8,8 +8,6 @@
 " Vundle
 " -------------------------------------------------
 
-set rtp+=~/.vim/bu
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -18,43 +16,43 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " color schemes
-Bundle 'chriskempson/base16-vim'
-Bundle 'larssmit/vim-getafe'
-Bundle 'vim-scripts/molokai'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/wombat256.vim'
-Bundle 'zaki/zazen'
-Bundle 'Pychimp/vim-luna'
+Plugin 'chriskempson/base16-vim'
+Plugin 'larssmit/vim-getafe'
+Plugin 'vim-scripts/molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/wombat256.vim'
+Plugin 'zaki/zazen'
+Plugin 'Pychimp/vim-luna'
 
 " langs
-Bundle 'pangloss/vim-javascript'
-Bundle 'tpope/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-markdown'
 
 " plugins
-Bundle 'kovisoft/slimv'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
+Plugin 'kovisoft/slimv'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
 " - following four Bundle calls constitute SnipMate
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'bling/vim-airline'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bling/vim-airline'
 
 filetype plugin indent on     " required
 
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install (update) bundles
-" :BundleSearch(!) foo - search (or refresh cache first) for foo
-" :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
+" " :PluginList          - list configured plugins
+" " :PluginInstall(!)    - install (update) plugins
+" " :PluginSearch(!) foo - search (or refresh cache first) for foo
+" " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 
 " Interface
 " -------------------------------------------------
@@ -115,6 +113,7 @@ set listchars=tab:\ \     " display tab as two spaces,
 set listchars+=trail:.    " trailing whitespace as dots
 set listchars+=extends:>  " wrap character
 set listchars+=precedes:<
+set backspace=indent,eol,start
 
 " don't wrap lines
 set nowrap

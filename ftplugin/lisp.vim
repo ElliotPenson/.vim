@@ -1,7 +1,7 @@
 " Lisp specific settings
 
 " set colorscheme
-color zazen
+color base16-grayscale
 
 " slimv
 let g:paredit_mode=0
