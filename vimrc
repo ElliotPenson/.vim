@@ -45,6 +45,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/ZoomWin'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
+Plugin 'mmai/wikilink'
 
 filetype plugin indent on     " required
 
