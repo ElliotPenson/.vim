@@ -22,3 +22,5 @@ plugin management. Vim will install `vim-plug` and all plugins on launch.
 
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [material.vim](https://github.com/kaicataldo/material.vim)
+* [vim-signify](https://github.com/mhinz/vim-signify)
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot)

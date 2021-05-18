@@ -11,6 +11,8 @@ endif
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'mhinz/vim-signify'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set incsearch  " incremental searching
