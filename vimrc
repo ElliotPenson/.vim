@@ -19,6 +19,9 @@ set incsearch  " incremental searching
 set ignorecase " ignore case when searching
 set smartcase  " ...unless search contains capital
 
+" Turn on the spell checker. Disable with :set nospell.
+set spell
+
 set textwidth=80
 set formatoptions+=t
 
