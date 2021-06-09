@@ -23,7 +23,8 @@ set smartcase  " ...unless search contains capital
 set spell
 
 set textwidth=80
-set formatoptions+=t
+set formatoptions+=t  " auto word wrap using textwidth
+set formatoptions-=l  " ...even lines already over the limit
 
 syntax enable
 if isdirectory(g:plugs['material.vim'].dir)
