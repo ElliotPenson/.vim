@@ -10,7 +10,7 @@ endif
 
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-signify'
 Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -28,8 +28,21 @@ set textwidth=80
 set formatoptions+=t  " auto word wrap using textwidth
 set formatoptions-=l  " ...even lines already over the limit
 
+" onedark.vim override: Don't set a background color when running in a terminal;
+" just use the terminal's background color
+" `gui` is the hex color code used in GUI mode/nvim true-color mode
+" `cterm` is the color code used in 256-color mode
+" `cterm16` is the color code used in 16-color mode
+if (has("autocmd") && !has("gui_running"))
+  augroup colorset
+    autocmd!
+    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+  augroup END
+endif
+
 syntax enable
 filetype plugin indent on
-colorscheme material
+colorscheme onedark
 
 let g:ctrlp_custom_ignore = '\v[\/](\.git|vendor|venv)$'
