@@ -35,7 +35,7 @@ set formatoptions-=l  " ...even lines already over the limit
 let mapleader = ","
 
 " fzf
-nnoremap <c-p> :Files<CR>
+nnoremap <expr> <c-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles')."\<cr>"
 nnoremap <silent> <Leader>b :Buffers<CR>
 let g:fzf_preview_window = []
 
