@@ -9,8 +9,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-signify'
 Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -30,6 +31,14 @@ set textwidth=80
 set formatoptions+=t  " auto word wrap using textwidth
 set formatoptions-=l  " ...even lines already over the limit
 
+" Use comma as leader
+let mapleader = ","
+
+" fzf
+nnoremap <c-p> :Files<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
+let g:fzf_preview_window = []
+
 " onedark.vim override: Don't set a background color when running in a terminal;
 " just use the terminal's background color
 " `gui` is the hex color code used in GUI mode/nvim true-color mode
@@ -46,5 +55,3 @@ endif
 syntax enable
 filetype plugin indent on
 colorscheme onedark
-
-let g:ctrlp_custom_ignore = '\v[\/](\.git|vendor|venv)$'
