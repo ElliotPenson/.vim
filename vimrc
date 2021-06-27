@@ -15,6 +15,8 @@ Plug 'mhinz/vim-signify'
 Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'dense-analysis/ale'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 set incsearch  " incremental searching
