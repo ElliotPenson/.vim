@@ -25,7 +25,12 @@ git clone https://github.com/ElliotPenson/.vim.git
 This configuration uses [vim-plug](https://github.com/junegunn/vim-plug) for
 plugin management. Vim will install `vim-plug` and all plugins on launch.
 
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-* [material.vim](https://github.com/kaicataldo/material.vim)
+* [onedark.vim](https://github.com/joshdick/onedark.vim)
+* [fzf](https://github.com/junegunn/fzf.vim)
 * [vim-signify](https://github.com/mhinz/vim-signify)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+* [vim-go](https://github.com/sheerun/vim-go)
+* [ale](https://github.com/dense-analysis/ale)
+* [vim-commentary](https://github.com/tpope/vim-commentary)
+* [vim-vinegar](https://github.com/tpope/vim-vinegar)
+
