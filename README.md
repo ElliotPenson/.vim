@@ -15,11 +15,6 @@ directory.
 git clone https://github.com/ElliotPenson/.vim.git
 ```
 
-## Configuration Files
-
-- `vimrc`
-  - `ftplugin/go.vim`
-
 ## Plugins
 
 This configuration uses [vim-plug](https://github.com/junegunn/vim-plug) for
